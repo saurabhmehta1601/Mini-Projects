@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: rgb(139, 140, 175);
+color: rgb(26, 25, 25);
+font-size: 20px;
+font-family: Helvetica;
+}
+
+h1{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.title-top{
+    font-size: 250%;
+    margin-top: 22px;
+    text-align: center;
+}
+form{
+    margin: 30px auto 0 25px;
+    line-height: 30px;
+}
+
+label{
+    display: inline-block;
+    width:190px;
+    font-size: 22px;
+}
+
+input{
+    height: 22px;
+    border:none;  
+}
+.Gender{
+    margin-top: 20px;
+}
+.Gender :nth-child(2){
+    margin-left: 80px;
+}
+.Gender :nth-child(2n){
+   margin-top: px;
+    width: 13px;
+}
+.Gender label{
+width:100px;
+}
+
+
+
+
+.boxes{
+    margin: 20px auto 0 150px;
+}
+.boxes input{
+    height: 15px;   
+}
+
+.boxes label{
+    margin-left: 10px;
+}
+.buttons input{
+    padding: 5px ;
+    font-size: 1.4rem;
+    vertical-align: middle;
+    height: 30px;
+}
+.buttons input:hover,
+.buttons input:hover:click{
+    background-color: rgb(156, 154, 151);
+border: 0;
+}
