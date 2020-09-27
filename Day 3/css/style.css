@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 100%;
+}
+
+header{
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url("../img/header-background.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+/* --------------global---------------- */
+   .heading{
+    font-size: 1.7em;
+   text-align: center;
+   margin: 2% auto 3% auto; 
+}
+
+/* ---------------header--------------- */
+
+
+header nav{
+    display: flex;
+    padding: 30px;
+}
+header nav div.main-logo {
+    font-size:2em ;
+}
+header nav div.main-logo span{
+    font-size: 1.7em;
+    color: rgb(158, 3, 3);
+    font-weight: 600;
+}
+header nav div.nav-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+header nav div.nav-menu div.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size:1.2em;
+}
+
+/* -------------------main-content---------------- */
+
+#About-us div.content{
+   display: flex;
+   width: 95%;
+   margin: auto;
+   line-height: 150%;
+   word-spacing: 4px;
+}
+#About-us div.content p.main-content{
+   flex-basis: 1.4;
+   padding-right: 30px;  
+}
+
+#About-us div.content p.sidebar{
+
+    background-color: rgb(34, 33, 33);
+    color: ivory;
+    margin-top: -2%;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+
+}
+
+#Services{
+    width: 95%;
+    margin: 0 auto;
+}
+#Services div.content {
+    display: flex;
+}
+#Services div.content div{
+    text-align: center;
+    border: 1px solid rgb(161, 160, 160);
+    border-radius: 4px;
+    padding: 15px;
+    margin: 5px;
+}
+#Services div.content div h4{
+    font-size: 1.2em;
+    margin: 2% auto -12% auto;
+}
+#Services div.content div p{
+    padding: 55px;
+}
+
+/* -------------------how it works--------------------------- */
+#How-it-works{
+    text-align: center;
+}
+#How-it-works iframe{
+    width:1100px;
+   height: 600px;
+}
+/* ----------------testimonials-------------------- */
+#Testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#Testimonials>h3{
+    margin-bottom: 50px;
+}
+
+#Testimonials div.main-content{
+    display: flex;
+}
+#Testimonials div.main-content{
+    padding: auto;
+}
+#Testimonials div.main-content div img{
+    width: 110%;
+    height: 370px;
+    padding-right: 15px;
+}
+
+
+/* -----------------footer------------- */
+
+footer{
+    margin-top:75px;
+    color: #fffff0;
+    background-color: rgb(34, 33, 33);
+    padding: 25px 5%;
+}
+#Contact-us{
+    display: flex;
+}
+#Contact-us div.social-links{
+    margin-left: auto;
+}
+#Contact-us div.info p:nth-child(2n)
+{
+    padding-bottom: 20px;
+}
+
+#Contact-us p a{
+color: #fffff0;
+text-decoration: none;
+}
+#Contact-us div.social-links p{
+    line-height: 150%;
+}
+#Contact-us div.social-links p:first-child{
+    margin-bottom: 20px;
+}
+footer p.copyright{
+    text-align: center;
+    word-spacing: 4px;
+}
+
+/* -------------------------media queries-------------------------- */
+
+@media (max-width:1027px)
+{   
+    header{
+        height: 50vh;
+    }
+    header nav div.nav-menu{
+        margin-top: 2.15%;
+    }
+
+    #How-it-works iframe{
+        width: 85%;
+        height: 500px;
+    }
+
+}
+
+@media (max-width:390px){
+
+    header{
+        text-align: center;
+    }
+    header nav,header nav div.nav-menu{
+        flex-wrap: wrap;
+    }
+    header nav div.main-logo{
+        margin-bottom: 30px;
+    }
+    header nav div{
+        width: 100%;
+        margin-top: 7px;
+    }
+    #About-us div.content{
+        flex-wrap: wrap;
+    }
+    #About-us div.content p{
+        width: 100%;
+        padding:15px ;
+    }
+    #Services div.content{
+        flex-wrap: wrap;
+    }
+    #Services div.content div h4{
+        margin-bottom: 5px;
+    }
+    #Services div.content div p{
+        padding: 5px;
+    }
+    #How-it-works iframe{
+        width: 75%;
+        height: 250px;
+        margin:auto;
+    }
+    #Testimonials div.main-content{
+        flex-wrap: wrap;
+    }
+    #Testimonials div.main-content div img{
+        height: 300px;
+        width: 90%;
+    }
+    #Testimonials div.main-content div p{
+        margin-bottom: 15px;
+
+    }
+    
+    #Contact-us{
+        display: block;
+    }
+    footer p.copyright{
+        margin-top: 20px;
+    }
+    
+}
