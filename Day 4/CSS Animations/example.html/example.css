@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+h1{
+    position: relative;
+    height: 300px;
+    font-size: 50px;
+    line-height: 1.6;
+    animation-name: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+p{
+    line-height: 1.6;
+    position: relative;
+    padding: 20px;
+    animation-delay: 3s;
+    animation-name: para;
+    animation-duration: 2s;
+    left: -100%;
+    animation-fill-mode: forwards;
+}
+
+button{
+padding:1rem 2rem ;
+font-size:24px;
+transition-duration: 2s;
+transition-delay: 3s;
+
+
+}
+button:hover{
+    transform: rotateX(180deg);
+}
+@keyframes heading{
+    0%{top: -50px;}
+    100%{top: 230px;}
+}
+
+@keyframes para{
+    0%{left: -100%;}
+    100%{left: 12px;}
+}

@@ -1,0 +1,25 @@
+body{
+    background: #333;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background: #fff;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    /* animation-fill-mode:forwards; final state of animation
+   */
+   /* animation-timing-function: ease; ease in out etc */
+   /* animation-delay: ; how late animation start after page loads */
+   /* animation-iteration-count: ; how many times happens */
+   /* animation-direction: ; could be reverse or alternate */
+}
+
+@keyframes myAnimation{
+    0%{background: #fff;left:0;top:0; border-radius: 0 0 0 0;}
+    25%{background:red;left:300px;top:0; border-radius:50% 0 0 0 ;}
+    50%{background: blue;left:300px;top:300px; border-radius:50% 50% 0 0 ;} 
+    75%{background:green;left:0;top:300px; border-radius:50% 50% 50% 0 ;}
+    100%{background: #fff;left:0;top:0; border-radius:50% 50% 50% 50% ;}
+}
