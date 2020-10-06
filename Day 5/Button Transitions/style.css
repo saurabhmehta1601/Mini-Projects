@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: teal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    padding: 20px;
+    
+}
+
+.button{
+    text-align: center;
+    display: inline-block;
+    font-size: 1.4em;
+    padding: 20px;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#one{
+    background-color: #fff;
+    color: teal;
+    border: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+#one:hover{
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+
+#two{
+    position: relative;
+}
+#two:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+#two:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height:0%;
+    width: 3px;
+    background: #fff;
+    transition: height 0.3s;
+}
+#two:hover:after{  
+    height:100%;
+}
+#two:hover:before{
+    width: 100%;
+}
+
+#three{
+    position: relative;
+    transition: letter-spacing 0.3s;
+}
+#three:hover{
+    letter-spacing: 3px;
+}
+
+#three:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+#three:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+#three:hover:before{
+    width: 100%;
+}
+#three:hover:after{
+    width: 100%;
+}
+
+#fourth{
+    position: relative;
+    transition: letter-spacing .3s;
+}
+#fourth:hover{
+    letter-spacing: 3px;
+}
+
+#fourth:before,#fourth:after{
+    content: "";
+    position: absolute;
+  
+    width: 20%;
+    height: 25%;
+    border: 3px solid;
+    background-color: transparent;
+    transition: .3s;
+}
+#fourth:before{
+    top: 0;
+    right: 0;
+    border-color: #fff #fff transparent transparent;
+}
+#fourth:after{
+    left: 0;
+    bottom: 0;
+    border-color:transparent transparent #fff #fff  ;  
+}
+#fourth:hover:before,#fourth:hover:after{
+    width: 100%;
+    height: 100%;
+}
+
+#fifth{
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+#fifth:hover{
+    box-shadow: inset 0 0 15px#fff;
+}
+#fifth:before{
+    content: "";
+    position: absolute;
+    border: 1px solid #fff;
+    left: -1px;
+    top: -1px;
+    width: 100%;
+    height: 100%;
+    transition: border-color 0.3s,transform 0.3s;
+}
+#fifth:hover:before{
+    transform: scale(1.2);
+    border-color: transparent;
+}
+
+#sixth{
+    border: 1px solid #fff;
+    position: relative;
+    transition: color 0.3s;
+}
+#sixth:hover{
+    color: teal;
+}
+#sixth:before{
+    content: "";
+   
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: width 0.3s cubic-bezier(.81,.31,.87,.63);
+
+}
+#sixth:hover:before{
+    width: 100%;
+}
+
+#seventh{
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+#seventh:hover{
+    color: teal;
+}
+#seventh:before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: -20px;
+    left: -30px;
+    transform: rotate(10deg);
+    z-index: -1; 
+    height: 150%;
+    width: 0;
+    transition: width 0.3s cubic-bezier(.81,.31,.87,.63)  ;
+}
+#seventh:hover:before{  
+    width: 150%;
+}
+
+#eighth{
+    position: relative;
+    border:1px solid #fff;    
+}
+#eighth:hover{
+    color: teal;
+}
+#eighth:before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 0;
+    background-color: #fff;
+    transition: height 0.3s cubic-bezier(.81,.31,.87,.63);
+    z-index: -1;
+}
+#eighth:hover:before{
+    height: 50%;
+}
+
+#eighth:after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: #fff;
+    transition: height 0.3s cubic-bezier(.81,.31,.87,.63);
+    z-index: -1;
+}
+
+#eighth:hover:after{
+height: 50%;
+}
+
+#nine{
+    border: 1px solid #fff;
+    transition: border-radius 0.3s;
+}
+#nine:hover{
+    border-radius: 50px;
+}
+
+#tenth{
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+#tenth:hover{
+    color: teal;
+}
+
+#tenth:before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    z-index: -1;
+    border-radius: 80%;
+    height: 130px;
+    width: 0px;
+    left: -30px;
+    top: -30px;
+    transform: rotate(15deg);
+    transition: all 0.3s;
+}
+
+#tenth:hover:before{
+    border-radius: 0%;
+    width: 200px;
+}
