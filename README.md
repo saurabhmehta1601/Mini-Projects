@@ -1,3 +1,3 @@
-# 100-Days-Of-Code
+# 100-Projects-Of-Code
 
-My track of 100 days of Web development
+This repository keeps track of my progress as web developer as I go through making 100 mini projects.
